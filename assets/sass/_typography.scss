@@ -1,0 +1,274 @@
+// %font-sans {
+//   font-family: 'BuloRounded', arial, sans-serif;
+//   font-weight: normal;
+//   line-height: 1.2;
+// }
+
+// .white {
+//   color: white;
+// }
+
+// .blue {
+//   color: $blue;
+// }
+
+// .align-c {
+//   text-align: center;
+// }
+
+// .bold {
+//   font-weight: bold;
+// }
+
+// /* Global */
+// body {
+//   margin: 0;
+//   @extend %font-sans;
+//   -moz-osx-font-smoothing: grayscale;
+//   -webkit-font-smoothing: antialiased;
+//   font-smoothing: antialiased;
+// }
+
+// %h1,
+// .h1 {
+//   @extend %font-sans;
+//   font-size: 23px;
+//   line-height: 1.2;
+
+//   @include respond-to(laptop-min){
+//     font-size: 42px;
+//   }
+// }
+
+// %h2,
+// .h2 {
+//   @extend %font-sans;
+//   font-size: 26px;
+//   line-height: 33px;
+
+//   @include respond-to(laptop-min){
+//     font-size: 42px;
+//     line-height: 38px;
+
+//   }
+
+// }
+// %h3,
+// .h3 {
+//   @extend %font-sans;
+//   font-size: 18px;
+//   line-height: 25px;
+
+//   @include respond-to(laptop-min){
+//     font-size: 24px;
+//     line-height: 28px;
+//   }
+// }
+// %h4,
+// .h4 {
+//   @extend %font-sans;
+//   font-size: 13px;
+//   line-height: 16px;
+//   font-weight: bold;
+//   text-transform: uppercase;
+
+//   @include respond-to(laptop-min){
+//     font-size: 22px;
+//     line-height: 36px;
+//   }
+// }
+// %h5,
+// .h5 {
+//   @extend %font-sans;
+//   font-size: 14px;
+//   line-height: 16px;
+//   font-weight: bold;
+//   text-transform: uppercase;
+
+//   @include respond-to(laptop-min){
+//     font-size: 16px;
+//     line-height: 19px;
+//   }
+// }
+
+// /* Paragraphs */
+// %p1,
+// .p1 {
+//   @extend %font-sans;
+//   font-size: 16px;
+//   line-height: 1.5;
+
+//   @include respond-to(laptop-min){
+//     font-size: 20px;
+//   }
+// }
+// %p2,
+// .p2 {
+//   @extend %font-sans;
+//   font-size: 14px;
+//   font-weight: normal;
+//   line-height: 1.75;
+//   @include respond-to(laptop-min){
+//     font-size: 16px;
+//     font-weight: normal;
+//   }
+// }
+
+// %p3,
+// .p3 {
+//   @extend %font-sans;
+//   font-size: 12px;
+//   font-weight: normal;
+//   line-height: 1.75;
+//   @include respond-to(laptop-min){
+//     font-size: 14px;
+//     font-weight: normal;
+//   }
+// }
+
+// /* Blockquote */
+// %bq,
+// .bq {
+//   @extend %font-sans;
+//   font-size: 20px;
+//   line-height: 1.4;
+
+//   @media (--xs) {
+//     font-size: 28px;
+//   }
+// }
+
+// /* Links */
+// %a1,
+// .a1,
+// .link {
+//   cursor: pointer;
+//   opacity: 1;
+
+//   &:hover {
+//     text-decoration: underline;
+//   }
+// }
+// %a2,
+// .a2 {
+//   text-decoration: underline;
+// }
+// %a3,
+// .a3 {
+//   @extend %p2;
+//   display: inline-block;
+//   margin-left: -6px;
+//   padding: 0 6px;
+//   position: relative;
+
+//   span {
+//     position: relative;
+//     z-index: 1;
+//   }
+
+//   &::before {
+//     content: '';
+//     height: 100%;
+//     right: 0;
+//     position: absolute;
+//     top: 0;
+//     width: 0;
+//     z-index: 0;
+//   }
+// }
+// .no-touch {
+//   %a1,
+//   .a1 {
+//     transition: opacity var(--speed) var(--ease);
+
+//     &:hover {
+//       opacity: 0.6;
+//     }
+//   }
+
+//   %a2,
+//   .a2 {
+//     &::after {
+//       transition: width var(--speed) var(--ease);
+//     }
+
+//     &:hover {
+//       &::after {
+//         width: calc(100% - 10px);
+//       }
+//     }
+//   }
+
+//   %a3,
+//   .a3 {
+//     &::before {
+//       transition: width var(--speed) var(--ease);
+//     }
+
+//     &:hover {
+//       &::before {
+//         left: 0;
+//         right: auto;
+//         width: 100%;
+//       }
+//     }
+//   }
+// }
+// .link--withicon {
+//   align-items: center;
+//   display: inline-flex;
+//   .icon {
+//     height: 8px;
+//     width: 15px;
+//     margin: 0 5px;
+//   }
+// }
+
+// /* Horizontal Rule */
+// %hr,
+// .hr {
+//   background-color: var(--black);
+//   border: none;
+//   display: block;
+//   height: 1px;
+//   opacity: 0.2;
+//   width: 100%;
+// }
+
+// /* Styles */
+// .italic {
+//   font-style: italic;
+// }
+// .light {
+//   font-weight: 100;
+// }
+// .medium {
+//   font-weight: 500;
+// }
+// .bold {
+//   font-weight: 900;
+// }
+// .uppercase {
+//   text-transform: uppercase;
+// }
+// .underline {
+//   text-decoration: underline;
+// }
+// .decoration--none {
+//   text-decoration: none;
+// }
+// .no-wrap{
+//   white-space: nowrap;
+// }
+// .small {
+//   font-size: 0.8em;
+// }
+
+// /* Accessibility */
+// .js-link,
+// .link,
+// a {
+//   &:focus {
+//     outline: 2px solid blue;
+//   }
+// }
